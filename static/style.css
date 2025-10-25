@@ -1,0 +1,175 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    color: #333;
+}
+
+/* --- Estilos Comuns --- */
+h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1c1e21;
+    text-align: center;
+}
+#status {
+    margin-top: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    min-height: 1.2em;
+    text-align: center;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* --- Página Pública (index.html) --- */
+.public-portal {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+.public-portal #codeInput {
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.music-player-area {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+#nowPlaying {
+    font-weight: bold;
+}
+#audioPlayer {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* --- Página de Login (admin.html) --- */
+.login-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* --- Dashboard (dashboard.html) --- */
+.uploader-container, .music-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin-bottom: 20px;
+}
+.select-button {
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+.select-button:hover {
+    background-color: #117a8b;
+}
+.file-label {
+    margin: 15px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+#fileName {
+    font-weight: bold;
+}
+#uploadButton {
+    background-color: #28a745;
+}
+#uploadButton:hover {
+    background-color: #218838;
+}
+
+/* Lista de Músicas no Dashboard */
+#musicList {
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+}
+.music-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5px;
+    border-bottom: 1px solid #eee;
+}
+.music-item .info {
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+}
+.music-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60%;
+}
+.play-button {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    width: auto; /* Sobrescreve o width 100% */
+    margin: 0;
+}
+.play-button:hover {
+    background-color: #117a8b;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="uploader-container">
+        <h1>Painel de Upload</h1>
+        
+        <label for="fileInput" class="select-button">Selecionar Música</label>
+        <input type="file" id="fileInput" hidden accept="audio/*">
+
+        <p class="file-label">Arquivo: <span id="fileName">Nenhum arquivo selecionado</span></p>
+
+        <button id="uploadButton" disabled>Enviar</button>
+
+        <div id="status"></div> 
+    </div>
+
+    <div class="music-container">
+        <h2>Músicas Enviadas</h2>
+        <p id="nowPlaying">Tocando agora: Nenhuma</p>
+        <audio id="audioPlayer" controls controlsList="nodownload"></audio>
+        
+        <div id="musicList"></div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

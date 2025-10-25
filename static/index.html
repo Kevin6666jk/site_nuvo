@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="public-portal">
+        <h1>Portal de Música</h1>
+        <p>Insira o código da música para ouvir:</p>
+        
+        <input type="text" id="codeInput" placeholder="Código de 5 dígitos" maxlength="5">
+        <button id="enterButton">Entrar</button>
+
+        <div id="status"></div>
+
+        <div class="music-player-area" id="playerArea" style="display: none;">
+            <p id="nowPlaying">Tocando agora: Nenhuma</p>
+            <audio id="audioPlayer" controls controlsList="nodownload"></audio>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
